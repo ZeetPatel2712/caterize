@@ -1,0 +1,182 @@
+@import "./base/mixins";
+
+.total-text {
+    font-size: var(--text-sm);
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: -0.024rem;
+    line-height: normal;
+}
+
+.modal-btn {
+    text-align: center;
+
+    button {
+        margin-bottom: var(--sp-6);
+    }
+
+    .button-bottom-text {
+        font-size: var(--text-es);
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: -0.024rem;
+        line-height: normal;
+    }
+}
+
+.card-modal {
+    .cart-price {
+        color: var(--primary-cl-500);
+        font-size: var(--text-lg);
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: -0.04rem;
+        line-height: normal;
+        margin-right: var(--sp-3);
+        text-align: right;
+    }
+
+    h3 {
+        margin-bottom: var(--sp-2);
+    }
+
+    .sub-heading {
+        color: var(--text-color);
+        font-size: var(--text-sm);
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: -0.028rem;
+        line-height: normal;
+        margin-bottom: var(--sp-4);
+    }
+
+    .cart-info {
+        .cart-item {
+            border: 0.1rem solid var(--light-clr-300);
+            border-radius: var(--radius-xl);
+            padding: var(--sp-4);
+            @include flex(flex, flex-start, center, var(--sp-4));
+
+            &:not(:last-child) {
+                margin-bottom: var(--sp-5);
+            }
+
+            .cart-img {
+                aspect-ratio: 1.4/1;
+                border-radius: var(--radius-xl);
+                overflow: hidden;
+                width: 18rem;
+
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    width: 100%;
+                }
+            }
+
+            .cart-info {
+                flex: 1;
+                width: 100%;
+            }
+
+            .cart-price {
+                margin-left: auto;
+            }
+        }
+    }
+
+    .cart-add-item {
+        margin-bottom: 4.6rem !important;
+
+        .sub-heading {
+            margin-bottom: 0;
+        }
+    }
+
+    .item-total {
+        &:not(:last-child) {
+            border-bottom: 0.1rem solid var(--light-clr-300);
+            margin-bottom: var(--sp-8);
+            padding-bottom: var(--sp-8);
+        }
+
+        .total-row {
+            @include flex(flex, space-between, center, var(--sp-3), row, wrap);
+
+            &:not(:last-child) {
+                margin-bottom: var(--sp-5);
+            }
+
+            .total-label {
+                font-size: var(--text-lg);
+                font-style: normal;
+                font-weight: 500;
+                letter-spacing: -0.04rem;
+                line-height: normal;
+                @include flex(flex, flex-start, center, var(--sp-3));
+            }
+
+            .total-price {
+                font-size: var(--text-lg);
+                font-style: normal;
+                font-weight: 700;
+                letter-spacing: -0.04rem;
+                line-height: normal;
+                text-align: right;
+            }
+
+            .label-wp {
+                @include flex(inline-flex, center, flex-start, var(--sp-1), column);
+
+                .total-text {
+                    color: var(--text-color);
+                    font-size: var(--text-sm);
+                    font-style: normal;
+                    font-weight: 500;
+                    letter-spacing: -0.028rem;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+
+    .item-total:has(.total-info) {
+        @include flex(flex, space-between, flex-start);
+
+        .total-info {
+            @include flex(flex, center, flex-start, 0, column);
+        }
+
+        .total-label {
+            margin-bottom: var(--sp-4);
+        }
+
+        .total-add-input {
+            margin-bottom: var(--sp-4);
+            @include flex(inline-flex, flex-start, center, var(--sp-3), row, wrap);
+
+            input {
+                background: var(--light-clr-300);
+                border-radius: var(--radius-md);
+                font-size: var(--text-md);
+                font-style: normal;
+                font-weight: 600;
+                letter-spacing: -0.032rem;
+                line-height: normal;
+                max-width: 12rem;
+                padding: var(--sp-3) var(--sp-3);
+            }
+
+            .add-tip {
+                color: var(--primary-cl-500);
+                font-size: var(--text-md);
+                font-style: normal;
+                font-weight: 700;
+                letter-spacing: -0.032rem;
+                line-height: normal;
+                text-decoration: underline;
+            }
+        }
+    }
+}

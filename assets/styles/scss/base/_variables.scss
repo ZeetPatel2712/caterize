@@ -1,0 +1,101 @@
+:root {
+    // primary color
+    --primary-cl-100: #f8a9ad;
+    --primary-cl-200: #f2777c;
+    --primary-cl-300: #e84b52;
+    --primary-cl-400: #d42e35;
+    --primary-cl-500: #c3262d;
+
+    // status color
+    --danger-cl: #ef4444;
+    --danger-hover-cl: #b91c1c;
+    --info-cl: #3b82f6;
+    --info-hover-cl: #1d4ed8;
+    --warning-cl: #f59e0b;
+    --warning-hover-cl: #ca8a04;
+    --success-cl: #7bc143;
+    --success-hover-cl: #264f04;
+
+    //  neutral colors
+    --neutral-clr-50: #737373;
+    --neutral-clr-100: #525252;
+    --neutral-clr-200: #323232;
+    --neutral-clr-300: #262626;
+    --neutral-clr-400: #171717;
+    --neutral-clr-500: #0a0a0a;
+
+    // light  colors
+    --light-clr-300: #e7e7e7;
+    --light-clr-400: #f8f8f8;
+    --light-clr-500: #eee;
+    --light-clr-600: #ababab;
+
+    // text color
+    --text-color: #7d7d7d;
+
+    // title sizes
+    --h1-title: 3.6rem;
+    --h2-title: 3.2rem;
+    --h3-title: 2.4rem;
+    --h4-title: 2rem;
+
+    // text sizes
+    --text-xxs: 1rem;
+    --text-es: 1.2rem;
+    --text-sm: 1.4rem;
+    --text-md: 1.6rem;
+    --text-lg: 2rem;
+
+    //  spacing
+    --sp-1: 0.4rem;
+    --sp-2: 0.8rem;
+    --sp-3: 1.2rem;
+    --sp-4: 1.6rem;
+    --sp-5: 2rem;
+    --sp-6: 2.4rem;
+    --sp-7: 2.8rem;
+    --sp-8: 3.2rem;
+    --sp-9: 3.4rem;
+    --sp-10: 3.6rem;
+    --sp-11: 4rem;
+    --sp-12: 4.2rem;
+    --sp-13: 4.4rem;
+    --sp-14: 4.6rem;
+    --sp-15: 4.8rem;
+    --sp-16: 5rem;
+    --sp-17: 5.2rem;
+    --sp-18: 5.4rem;
+    --sp-19: 5.8rem;
+    --sp-20: 6rem;
+    --sp-21: 6.4rem;
+    --sp-22: 5rem;
+
+    // element height
+    --el-h-sm: 3.6rem;
+    --el-h-md: 4.2rem;
+    --el-h-lg: 4.8rem;
+
+    // border radius
+    --radius-sm: 0.8rem;
+    --radius-md: 1.2rem;
+    --radius-lg: 1.4rem;
+    --radius-xl: 2.4rem;
+    --radius-xxl: 3.2rem;
+    --radius-pill: 10rem;
+    --radius-circle: 100%;
+
+    // transitions
+    --ts-fast: 0.2s ease-in-out;
+    --ts-normal: 0.4s ease-in-out;
+    --ts-slow: 0.6s ease-in-out;
+
+    // box shadow
+    --shadow-sm: rgb(149 157 165 / 20%) 0 0.8rem 2.4rem;
+    --shadow-md: rgb(100 100 111 / 20%) 0 0.7rem 2.9rem 0;
+    --shadow-lg: rgb(0 0 0 / 16%) 0 1rem 3.6rem 0, rgb(0 0 0 / 6%) 0 0 0 0.1rem;
+
+    // header variables
+    --header-height: 6.4rem;
+    --header-top-sp: 4rem;
+    --header-total-height: calc(var(--header-height) + var(--header-top-sp));
+}

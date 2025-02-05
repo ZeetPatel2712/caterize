@@ -1,0 +1,13 @@
+// base css
+@import "./base/reset";
+@import "./base/global";
+@import "./base/variables";
+@import "./base/grid";
+
+// components css
+@import "./components/header";
+@import "./components/button";
+@import "./components/footer";
+@import "./components/modal";
+@import "./components/food-card";
+@import "./components/review-card";

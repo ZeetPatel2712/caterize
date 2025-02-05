@@ -1,0 +1,202 @@
+@use "../base/mixins.scss" as *;
+
+// heading classes
+
+.h1-title {
+    font-size: var(--h1-title);
+    font-weight: 700;
+    letter-spacing: -0.072rem;
+    line-height: normal;
+}
+
+.h2-title {
+    font-size: var(--h2-title);
+    font-weight: 700;
+    letter-spacing: -0.064rem;
+    line-height: normal;
+}
+
+.h3-title {
+    font-size: var(--h3-title);
+    font-weight: 700;
+    letter-spacing: -0.048rem;
+    line-height: normal;
+}
+
+.h4-title {
+    font-size: var(--h4-title);
+    font-weight: 700;
+    letter-spacing: -0.04rem;
+    line-height: normal;
+}
+
+// container styles
+
+.container {
+    max-width: calc(112.8rem + 1.5rem);
+}
+
+// width classes
+
+.w-100 {
+    width: 100%;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+// swiper slides
+
+.swiper-container {
+    position: relative;
+
+    .swiper-wrapper {
+        height: auto !important;
+    }
+
+    .swiper-slide {
+        max-width: fit-content;
+        @include flex(flex, center, center, 0, nowrap, row);
+    }
+
+    .theme-swiper-btn {
+        --size: 2.8rem;
+
+        background: var(--light-clr-400);
+        border: 0.1rem solid var(--light-clr-300);
+        border-radius: var(--radius-circle);
+        color: var(--primary-cl-500);
+        display: grid;
+        height: var(--size);
+        place-items: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: var(--ts-fast);
+        width: var(--size);
+        z-index: 2;
+
+        &:hover {
+            background: var(--light-clr-300);
+        }
+
+        &.btn-prev {
+            left: calc(-1 * (var(--size) + 1.4rem));
+        }
+
+        &.btn-next {
+            right: calc((var(--size) + 1.4rem) * -1);
+        }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none !important;
+    }
+}
+
+.add-more-iteam {
+    @include flex(inline-flex, flex-start, center, var(--sp-4), wrap);
+
+    .counter {
+        background: var(--light-clr-400);
+        border-radius: var(--radius-pill);
+        padding: var(--sp-1) var(--sp-2);
+        @include flex(inline-flex, center, center, var(--sp-3), row);
+
+        .couter-icon {
+            color: var(--primary-cl-500);
+            font-size: var(--text-es);
+            margin-bottom: -0.2rem;
+        }
+
+        button {
+            line-height: 1;
+        }
+    }
+
+    .serves {
+        color: var(--dark-cl);
+        font-size: var(--text-es);
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: -0.02rem;
+        line-height: normal;
+    }
+}
+
+// form
+
+.from-label {
+    color: #c3262d;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0 0 1.6rem;
+}
+
+.form-control {
+    margin: 3rem 0 2.4rem;
+    width: 100%;
+}
+
+.from-input {
+    background-color: #f8f8f8;
+    border: 0.1rem solid #e7e7e7;
+    border-radius: 0.8rem;
+    font-size: 1.4rem;
+    padding: 1.8rem 2.4rem;
+    width: 100%;
+}
+
+.from-input::placeholder {
+    color: #969696;
+    font-size: 1.4rem;
+}
+
+.form-flex {
+    display: flex;
+    // flex-wrap: wrap;
+    gap: 2.4rem;
+    justify-content: space-between;
+}
+
+.main-from {
+    margin: 0 auto;
+    max-width: 74.4rem;
+    width: 100%;
+}
+
+.checkout-btn {
+    margin: 0 auto;
+    max-width: 82.8rem;
+    width: 100%;
+
+    button {
+        background-color: #7bc143;
+        border-radius: 0.8rem;
+        color: white;
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin: 4rem 0 3.2rem;
+        padding: 1.4rem 0;
+        width: 100%;
+    }
+}
+
+.sign-btn {
+    margin: 0 auto;
+    max-width: 82.8rem;
+    width: 100%;
+
+    button {
+        background-color: #c3262d;
+        border-radius: 0.8rem;
+        color: white;
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin: 4rem 0 3.2rem;
+        padding: 1.4rem 0;
+        width: 100%;
+    }
+}

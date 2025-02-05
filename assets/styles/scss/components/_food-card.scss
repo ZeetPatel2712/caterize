@@ -1,0 +1,108 @@
+@import "../base/mixins";
+
+.food-card {
+    border: 0.1rem solid var(--light-clr-300);
+    border-radius: var(--radius-xl);
+    cursor: pointer;
+    padding: var(--sp-4) var(--sp-6) var(--sp-4) var(--sp-4);
+    position: relative;
+    transition: var(--ts-fast);
+    @include flex(flex, center, flex-start, var(--sp-5), row, wrap);
+
+    &.active,
+    &:hover {
+        border-color: var(--primary-cl-400);
+    }
+
+    .card-img {
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        width: 18rem;
+
+        img {
+            aspect-ratio: 1.21/1;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .card-info {
+        color: var(--dark-cl);
+        flex: 1;
+        padding-top: var(--sp-5);
+        width: 100%;
+        @include flex(flex, center, flex-start, 0, column);
+
+        .card-title {
+            font-size: var(--text-lg);
+            font-weight: 700;
+            letter-spacing: -0.04rem;
+            line-height: normal;
+            margin-bottom: var(--sp-2);
+            @include text-ep(null, 1);
+        }
+
+        .sub-des {
+            color: var(--text-color);
+            display: inline-block;
+            font-size: var(--text-sm);
+            font-weight: 500;
+            letter-spacing: -0.028rem;
+            line-height: normal;
+            margin-bottom: var(--sp-3);
+            @include text-ep(null, 1);
+        }
+
+        .feed {
+            display: inline-block;
+            font-size: var(--text-sm);
+            font-weight: 500;
+            letter-spacing: -0.028rem;
+            line-height: normal;
+            margin-bottom: var(--sp-3);
+
+            &:has(+ .sub-des) {
+                margin-bottom: var(--sp-2);
+            }
+        }
+
+        .card-des {
+            color: var(--text-color);
+            font-size: var(--text-es);
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: -0.024rem;
+            line-height: 150%;
+            @include text-ep(null, 2);
+        }
+
+        .card-badge {
+            background: #ffeeef;
+            border: 0.1rem solid var(--primary-cl-500);
+            border-radius: var(--radius-sm);
+            color: var(--dark-cl);
+            font-size: var(--text-xxs);
+            font-weight: 700;
+            letter-spacing: -0.02rem;
+            line-height: 180%;
+            margin-top: var(--sp-1);
+            padding: var(--sp-2) var(--sp-3);
+        }
+
+        .card-price {
+            bottom: var(--sp-5);
+            color: var(--primary-cl-500);
+            font-size: var(--text-lg);
+            font-weight: 700;
+            letter-spacing: -0.04rem;
+            line-height: 1;
+            margin-left: auto;
+            position: absolute;
+            right: var(--sp-5);
+        }
+
+        .food-icons {
+            @include flex(inline-flex, flex-start, center, 0.9rem, row, nowrap);
+        }
+    }
+}

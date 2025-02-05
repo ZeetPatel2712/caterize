@@ -1,0 +1,144 @@
+.desktop-2-page .hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)), url("../../images/desktop-2/hero-img.png") center/cover no-repeat;
+  color: var(--light-cl);
+  padding-top: var(--header-total-height);
+}
+.desktop-2-page .hero-section .sec-content {
+  margin-top: 0.5rem;
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0;
+  justify-content: center;
+}
+.desktop-2-page .hero-section .sec-content .page-title {
+  margin-bottom: 0.7rem;
+}
+.desktop-2-page .hero-section .sec-content .sub-heading {
+  font-size: var(--text--sm);
+  font-weight: 500;
+  letter-spacing: -0.028rem;
+  line-height: normal;
+  margin-bottom: 2.4rem;
+}
+.desktop-2-page .hero-section .sec-content .search-input {
+  background: var(--light-cl);
+  border-radius: var(--radius-lg);
+  margin-bottom: 15rem;
+  padding: var(--sp-3) var(--sp-3) var(--sp-3) var(--sp-5);
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: var(--sp-6);
+  justify-content: center;
+}
+.desktop-2-page .hero-section .sec-content .search-input input {
+  color: var(--dark-cl);
+  font-size: var(--text-sm);
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.024rem;
+  line-height: normal;
+  width: 30rem;
+}
+.desktop-2-page .hero-section .sec-content .search-input input::placeholder {
+  color: var(--text-color);
+}
+.desktop-2-page .delivery-locations {
+  background: var(--light-clr-400);
+  border: 0.1rem solid var(--light-clr-300);
+  border-radius: var(--radius-xl);
+  margin-bottom: 8rem;
+  margin-top: -8.5rem;
+  padding: var(--sp-15);
+}
+.desktop-2-page .delivery-locations .box-title {
+  border-bottom: 0.1rem solid var(--dark-cl);
+  margin-bottom: var(--sp-4);
+  padding-bottom: var(--sp-7);
+}
+.desktop-2-page .delivery-locations .box-title .title {
+  max-width: 35rem;
+}
+.desktop-2-page .delivery-locations .box-location-info .location {
+  margin-bottom: var(--sp-5);
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  gap: var(--sp-3);
+  justify-content: flex-start;
+}
+.desktop-2-page .delivery-locations .box-location-info .location-info-row {
+  --bs-gutter-x: var(--sp-6);
+  --bs-gutter-y: var(--sp-6);
+  margin-top: 0;
+}
+.desktop-2-page .delivery-locations .box-location-info .location-info-row > div:nth-child(1), .desktop-2-page .delivery-locations .box-location-info .location-info-row > div:nth-child(2), .desktop-2-page .delivery-locations .box-location-info .location-info-row > div:nth-child(3) {
+  margin-top: 0;
+}
+.desktop-2-page .delivery-locations .box-location-info .location-info-row .location-box {
+  background: var(--light-cl);
+  border: 0.1rem solid var(--light-clr-300);
+  border-radius: var(--radius-lg);
+  padding: var(--sp-5);
+}
+.desktop-2-page .delivery-locations .box-location-info .location-box .location-title {
+  margin-bottom: 0.8rem;
+}
+.desktop-2-page .delivery-locations .box-location-info .location-box .location-into {
+  color: var(--dark-cl);
+  font-size: var(--text-sm);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.028rem;
+  line-height: normal;
+  margin-bottom: 0.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  white-space: normal;
+}
+.desktop-2-page .delivery-locations .box-location-info .location-box button {
+  color: var(--primary-cl-500);
+  font-size: var(--text--sm);
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.028rem;
+  text-decoration: underline;
+  transition: var(--ts-fast);
+}
+.desktop-2-page .delivery-locations .box-location-info .location-box button:hover {
+  color: var(--primary-cl-300);
+}
+.desktop-2-page .about-fresh-sec {
+  margin-bottom: var(--sp-8);
+}
+.desktop-2-page .about-fresh-sec .sec-title {
+  border-bottom: 0.1rem solid var(--dark-cl);
+  margin-bottom: var(--sp-6);
+  padding-bottom: var(--sp-6);
+}
+.desktop-2-page .about-fresh-sec .content-img {
+  border-radius: var(--radius-xl);
+  height: 20rem;
+  overflow: hidden;
+}
+.desktop-2-page .about-fresh-sec .content-img img {
+  object-fit: cover;
+  object-position: center;
+}
+.desktop-2-page .about-fresh-sec .content {
+  padding-right: var(--sp-8);
+}
+.desktop-2-page .about-fresh-sec .content p {
+  color: var(--dark-cl);
+  font-size: var(--text-md);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.032rem;
+  line-height: 150%;
+}
+
+/*# sourceMappingURL=desktop-2.css.map */

@@ -1,0 +1,24 @@
+@import "../base/mixins";
+
+.footer {
+    .footer-inner {
+        border-top: 0.1rem solid var(--dark-cl);
+        padding: var(--sp-8) 0 var(--header-top-sp) 0;
+        @include flex(flex, center, center, 0, row, wrap);
+
+        p {
+            a {
+                text-decoration: none;
+            }
+
+            &,  
+            a {
+                font-size: var(--text-md);
+                font-style: normal;
+                font-weight: 500;
+                letter-spacing: -0.032rem;
+                line-height: normal;
+            }
+        }
+    }
+}

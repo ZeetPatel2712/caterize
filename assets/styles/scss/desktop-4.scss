@@ -1,0 +1,102 @@
+@import "./base/mixins";
+
+.checkout-modal {
+    .add-more-iteam-wp {
+        border-bottom: 0.1rem solid var(--light-clr-300);
+        margin-bottom: var(--sp-5);
+        padding-bottom: var(--sp-5);
+        padding-left: var(--sp-10);
+    }
+
+    .headcount h2 {
+        margin-bottom: var(--sp-2);
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th,
+    td {
+        padding: 1rem;
+        text-align: left;
+    }
+
+    .checkout-table {
+        .theme-select {
+            position: relative;
+
+            &::after {
+                --size: 2rem;
+
+                content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='4' d='M36 18L24 30L12 18'/%3E%3C/svg%3E");
+                display: inline-block;
+                height: var(--size);
+                position: absolute;
+                right: var(--sp-3);
+                top: 50%;
+                transform: translateY(-50%);
+                width: var(--size);
+            }
+        }
+
+        select {
+            background: var(--light-clr-400);
+            border-radius: var(--radius-lg);
+            font-size: var(--text-md);
+            font-style: normal;
+            font-weight: 400;
+            height: var(--el-h-md);
+            letter-spacing: -0.032rem;
+            line-height: normal;
+            padding: 0 var(--sp-4);
+            width: 100%;
+        }
+
+        th {
+            font-size: var(--text-lg);
+            font-style: normal;
+            font-weight: 700;
+            letter-spacing: -0.04rem;
+            line-height: normal;
+        }
+
+        th,
+        td {
+            text-align: center;
+        }
+
+        td {
+            font-size: var(--text-md);
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: -0.032rem;
+            line-height: normal;
+            text-align: center;
+        }
+    }
+
+    .button-top-content {
+        margin: var(--sp-6) 0;
+        @include flex(flex, center, center, var(--sp-2), column);
+
+        p {
+            font-size: var(--text-md);
+            font-style: normal;
+            font-weight: 600;
+            letter-spacing: -0.032rem;
+            line-height: normal;
+            text-align: center;
+        }
+
+        a {
+            color: var(--primary-cl-300);
+            font-size: var(--text-md);
+            font-style: normal;
+            font-weight: 700;
+            letter-spacing: -0.032rem;
+            text-decoration: underline;
+        }
+    }
+}

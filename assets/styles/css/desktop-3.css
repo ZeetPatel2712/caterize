@@ -1,0 +1,179 @@
+.total-text {
+  font-size: var(--text-sm);
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.024rem;
+  line-height: normal;
+}
+
+.modal-btn {
+  text-align: center;
+}
+.modal-btn button {
+  margin-bottom: var(--sp-6);
+}
+.modal-btn .button-bottom-text {
+  font-size: var(--text-es);
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.024rem;
+  line-height: normal;
+}
+
+.card-modal .cart-price {
+  color: var(--primary-cl-500);
+  font-size: var(--text-lg);
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.04rem;
+  line-height: normal;
+  margin-right: var(--sp-3);
+  text-align: right;
+}
+.card-modal h3 {
+  margin-bottom: var(--sp-2);
+}
+.card-modal .sub-heading {
+  color: var(--text-color);
+  font-size: var(--text-sm);
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.028rem;
+  line-height: normal;
+  margin-bottom: var(--sp-4);
+}
+.card-modal .cart-info .cart-item {
+  border: 0.1rem solid var(--light-clr-300);
+  border-radius: var(--radius-xl);
+  padding: var(--sp-4);
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  gap: var(--sp-4);
+  justify-content: flex-start;
+}
+.card-modal .cart-info .cart-item:not(:last-child) {
+  margin-bottom: var(--sp-5);
+}
+.card-modal .cart-info .cart-item .cart-img {
+  aspect-ratio: 1.4/1;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  width: 18rem;
+}
+.card-modal .cart-info .cart-item .cart-img img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+.card-modal .cart-info .cart-item .cart-info {
+  flex: 1;
+  width: 100%;
+}
+.card-modal .cart-info .cart-item .cart-price {
+  margin-left: auto;
+}
+.card-modal .cart-add-item {
+  margin-bottom: 4.6rem !important;
+}
+.card-modal .cart-add-item .sub-heading {
+  margin-bottom: 0;
+}
+.card-modal .item-total:not(:last-child) {
+  border-bottom: 0.1rem solid var(--light-clr-300);
+  margin-bottom: var(--sp-8);
+  padding-bottom: var(--sp-8);
+}
+.card-modal .item-total .total-row {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  gap: var(--sp-3);
+  justify-content: space-between;
+}
+.card-modal .item-total .total-row:not(:last-child) {
+  margin-bottom: var(--sp-5);
+}
+.card-modal .item-total .total-row .total-label {
+  font-size: var(--text-lg);
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.04rem;
+  line-height: normal;
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  gap: var(--sp-3);
+  justify-content: flex-start;
+}
+.card-modal .item-total .total-row .total-price {
+  font-size: var(--text-lg);
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.04rem;
+  line-height: normal;
+  text-align: right;
+}
+.card-modal .item-total .total-row .label-wp {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-flow: column wrap;
+  gap: var(--sp-1);
+  justify-content: center;
+}
+.card-modal .item-total .total-row .label-wp .total-text {
+  color: var(--text-color);
+  font-size: var(--text-sm);
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.028rem;
+  line-height: normal;
+}
+.card-modal .item-total:has(.total-info) {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0;
+  justify-content: space-between;
+}
+.card-modal .item-total:has(.total-info) .total-info {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 0;
+  justify-content: center;
+}
+.card-modal .item-total:has(.total-info) .total-label {
+  margin-bottom: var(--sp-4);
+}
+.card-modal .item-total:has(.total-info) .total-add-input {
+  margin-bottom: var(--sp-4);
+  align-items: center;
+  display: inline-flex;
+  flex-flow: row wrap;
+  gap: var(--sp-3);
+  justify-content: flex-start;
+}
+.card-modal .item-total:has(.total-info) .total-add-input input {
+  background: var(--light-clr-300);
+  border-radius: var(--radius-md);
+  font-size: var(--text-md);
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.032rem;
+  line-height: normal;
+  max-width: 12rem;
+  padding: var(--sp-3) var(--sp-3);
+}
+.card-modal .item-total:has(.total-info) .total-add-input .add-tip {
+  color: var(--primary-cl-500);
+  font-size: var(--text-md);
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.032rem;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=desktop-3.css.map */

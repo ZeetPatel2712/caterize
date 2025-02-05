@@ -1,0 +1,103 @@
+.text-white {
+  color: red;
+  font-weight: 500;
+}
+
+.auth-button {
+  background-color: #c3262d;
+  border-radius: 0.8rem;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 1.4rem 3.65rem;
+}
+
+.header-checkout {
+  background-color: #f8f8f8;
+  height: auto;
+  padding: 4rem 0;
+}
+
+.breadcrumb {
+  background-color: #f8f8f8;
+  border-radius: 1.2rem;
+  margin: 2.8rem auto 1.9rem;
+  max-width: 80.2rem;
+  padding: 1.2rem 1.8rem;
+  width: 100%;
+}
+.breadcrumb .breadcrumb-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  justify-content: space-between;
+}
+.breadcrumb .breadcrumb-wrapper .bread {
+  align-items: center;
+  display: flex;
+}
+.breadcrumb .breadcrumb-wrapper .bread p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.breadcrumb .breadcrumb-wrapper .bread .prave-bread {
+  color: #0829a1;
+  font-weight: 500;
+}
+.breadcrumb .breadcrumb-wrapper .bread .currant-bread {
+  color: #000;
+  font-weight: 700;
+}
+
+.address .heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.address .description {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.footer .note {
+  font-size: 1.2rem;
+}
+.footer .divider {
+  margin: 1.6rem 0;
+}
+.footer .main-menus {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.footer .main-menus .menus {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.footer .main-menus .menus .inner-menu {
+  border: 0;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding-right: 1rem;
+  position: relative;
+}
+.footer .main-menus .menus .inner-menu:not(:last-child)::before {
+  background-color: #000;
+  content: "";
+  font-size: 1rem;
+  height: 90%;
+  position: absolute;
+  right: 0; /* Align correctly with padding */
+  top: 0.2rem;
+  width: 0.2rem; /* Correct width */
+}
+.footer .copyright {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 1.6rem 0 0;
+  text-align: center;
+}
+
+/*# sourceMappingURL=desktop-6.css.map */

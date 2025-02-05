@@ -1,0 +1,86 @@
+@import "../base/mixins";
+
+.review-card {
+    background: var(--light-clr-400);
+    border: 0.1rem solid var(--light-clr-300);
+    border-radius: var(--radius-xl);
+    color: var(--dark-cl);
+    padding: var(--sp-5) var(--sp-6) var(--sp-6) var(--sp-8);
+    @include flex(flex, center, flex-start, 0, column, wrap);
+
+    .review-date {
+        display: inline-block;
+        font-size: var(--text-es);
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: -0.024rem;
+        line-height: 191.667%;
+        margin-bottom: -2.6rem;
+        margin-left: auto;
+    }
+
+    .review-des {
+        --quotes-size: 5.5rem;
+
+        margin-bottom: var(--sp-4);
+
+        .quotes-img {
+            aspect-ratio: 1;
+            margin-bottom: -2.4rem;
+            width: var(--quotes-size);
+        }
+
+        p {
+            font-size: var(--text-sm);
+            font-style: normal;
+            font-weight: 600;
+            letter-spacing: -0.028rem;
+            line-height: 164.286%;
+            @include text-ep(null, 5);
+
+            &::first-letter {
+                margin-left: calc(var(--quotes-size) + var(--sp-3));
+            }
+        }
+    }
+
+    .card-footer {
+        width: 100%;
+        @include flex(flex, space-between, center, var(--sp-4), row, wrap);
+
+        .user-img {
+            aspect-ratio: 1;
+            border-radius: var(--radius-circle);
+            overflow: hidden;
+            width: 5.5rem;
+        }
+
+        .user-info {
+            @include flex(flex, center, flex-start, 0.2rem, column);
+
+            .user-name {
+                font-size: var(--text-sm);
+                font-style: normal;
+                font-weight: 700;
+                letter-spacing: -0.028rem;
+                line-height: normal;
+            }
+
+            .user-location {
+                font-size: var(--text-es);
+                font-style: normal;
+                font-weight: 400;
+                letter-spacing: -0.024rem;
+                line-height: normal;
+            }
+        }
+    }
+
+    .review-user {
+        @include flex(inline-flex, space-between, center, var(--sp-3), row, wrap);
+    }
+
+    .review-stars {
+        @include flex(flex, center, center, var(--sp-1), row, wrap);
+    }
+}

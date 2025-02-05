@@ -1,0 +1,21 @@
+// flex mixin
+@mixin flex($display: flex, $justify: flex-start, $align: stretch, $gap: 0, $direction: row, $wrap: wrap) {
+    align-items: $align;
+    display: $display;
+    flex-flow: $direction $wrap;
+    gap: $gap;
+    justify-content: $justify;
+}
+@mixin text-ep($width: null, $lines: null) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: $width;
+    @if not $lines {
+        white-space: nowrap;
+    } @else {
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        -webkit-line-clamp: $lines;
+        white-space: normal;
+    }
+}

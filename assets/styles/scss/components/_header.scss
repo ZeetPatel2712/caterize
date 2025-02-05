@@ -1,0 +1,72 @@
+@import "../base/mixins";
+
+.header {
+     height: var(--header-height);
+     left: 0;
+     position: absolute;
+     top: var(--header-top-sp);
+     width: 100%;
+
+     @media (width < 1200px) {
+          --header-top-sp: 30px;
+     }
+
+     @media (width < 992px) {
+          --header-top-sp: 20px;
+     }
+
+     @media (width < 768px) {
+          --header-height: 125px;
+     }
+
+     @media (width < 416px) {
+          --header-height: 190px;
+     }
+
+     .header-options {
+          @include flex(inline-flex, center, center, var(--sp-5), row, wrap);
+
+          .select-location {
+               background: var(--light-cl);
+               border-radius: var(--radius-sm);
+               height: var(--el-h-lg);
+               padding: 0 var(--sp-9) 0 var(--sp-3);
+               @include flex(flex, center, flex-start, var(--sp-1), column, nowrap);
+
+               a {
+                    color: var(--primary-cl-500);
+                    font-size: var(--text-xxs);
+                    font-weight: 700;
+                    letter-spacing: -0.02rem;
+                    transition: var(--ts-fast);
+                    @include flex(flex, center, center, 0.2rem);
+
+                    &:hover {
+                         color: var(--primary-cl-300);
+                    }
+               }
+
+               p {
+                    font-size: var(--text-es);
+                    font-weight: 600;
+                    letter-spacing: -0.024rem;
+                    line-height: normal;
+               }
+          }
+
+          .card-num {
+               --size: 2rem;
+
+               background: var(--light-cl);
+               border-radius: var(--radius-circle);
+               color: var(--primary-cl-500);
+               display: grid;
+               height: var(--size);
+               place-items: center;
+               position: absolute;
+               right: -0.2rem;
+               top: -0.2rem;
+               width: var(--size);
+          }
+     }
+}
