@@ -43,6 +43,11 @@
   letter-spacing: -0.028rem;
   line-height: normal;
 }
+@media (width < 768px) {
+  .home-page .food-sec .description {
+    text-align: center;
+  }
+}
 .home-page .food-sec .customize-btn {
   color: var(--primary-cl-500);
   font-size: var(--text-md);

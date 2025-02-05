@@ -1,4 +1,4 @@
-@use "../base/mixins.scss" as *;
+@import "./mixins";
 
 // heading classes
 
@@ -88,11 +88,26 @@
         &.btn-next {
             right: calc((var(--size) + 1.4rem) * -1);
         }
+
+        @media (width < 768px) {
+            transform: unset;
+            position: relative;
+            top: unset !important;
+            left: unset !important;
+            right: unset !important;
+        }
     }
 
     .swiper-button-prev,
     .swiper-button-next {
         display: none !important;
+    }
+
+    .swiper-buttons {
+        @media (width < 768px) {
+            @include flex(flex, center, center, 1.6rem, row, wrap);
+            margin-top: 2rem;
+        }
     }
 }
 

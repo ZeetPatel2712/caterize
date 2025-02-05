@@ -198,9 +198,28 @@ strong {
 .swiper-container .theme-swiper-btn.btn-next {
   right: calc((var(--size) + 1.4rem) * -1);
 }
+@media (width < 768px) {
+  .swiper-container .theme-swiper-btn {
+    transform: unset;
+    position: relative;
+    top: unset !important;
+    left: unset !important;
+    right: unset !important;
+  }
+}
 .swiper-container .swiper-button-prev,
 .swiper-container .swiper-button-next {
   display: none !important;
+}
+@media (width < 768px) {
+  .swiper-container .swiper-buttons {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1.6rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
 }
 
 .add-more-iteam {
